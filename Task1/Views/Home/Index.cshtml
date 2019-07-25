@@ -1,0 +1,480 @@
+﻿
+
+@{
+    /**/
+
+    ViewBag.Title = "Home Page";
+
+}
+
+
+
+<head>
+
+
+    <link href="@Url.Content("~/Content/styles.css")"
+          rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+        <br />
+        <h2>Challenges</h2>
+        <hr style="border:2px;background:black;height:2px;">
+            </header>
+        <form action="...">
+            <input type="text" name="nazwa" value="Filtres">
+            <br />
+            <br />
+        </form>
+
+        <div class="row">
+
+
+            <div class="col-sm-2 ">
+
+
+               <a style="text-decoration: none" href="New"><button1 class=" btn span1 btn-block fontclass"><strong>Create Challenge</strong></button1></a>
+
+
+
+
+
+
+            </div>
+
+
+            <div class="col-sm-4 ">
+
+            </div>
+
+            <div class="col-sm-4 ">
+
+
+            </div>
+
+            <div class="col-sm-1 ">
+
+            </div>
+
+
+        </div>
+
+        <hr style="border:2px;background:black;height:2px;">
+        <div class="row">
+
+
+
+            <div class="col-sm-1">
+                <input type="checkbox" class="form-check-input" />
+            </div>
+
+            <div class="col-sm-4">
+                <b>Name</b>
+            </div>
+
+            <div class="col-sm-1 ">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <b>Scope</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 ">
+                <div class=" row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <b>Current Status</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 ">
+                <b>Actions</b>
+            </div>
+
+        </div>
+
+        <hr style="bordpx;background:black;height:2px;">
+        <div class="row">
+            <div class="col-sm-1">
+                <input type="checkbox" class="form-check-input" />
+            </div>
+
+
+
+
+            <div class="col-sm-4 ">
+                <a href="#" s="stretched-link"><u><p style="font-size:17px;color:blue">Challenge 1</p></u></a>
+                <h5><i> <b>Created by Company_Name; End at dd/mm/yyyy </b></i> </h5>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                        <p><span class="glyphicon glyphicon-tag iconsize1 "></span></p>
+                    </div>
+                    <div class="col-sm-4 ">
+
+
+                        <button2 class="btn btn-sm btn-block fontclass">keyword 1</button2>
+
+                    </div>
+
+                    <div class="col-sm-4 ">
+
+                        <button2 class="btn btn-sm btn-block fontclass">keyword 2</button2>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-1 ">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <a href="Contact">
+                            <div class="circle c2">
+                                <div class="circle c3">
+                                    <div class="circle c4"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <ul id="progress">
+                            <li class="active1">@Html.ActionLink("1", "Inception", "Home", new { @class = "active1" })</li>
+                            <li class="active2">@Html.ActionLink("2", "Prioritisation", "Home", new { @class = "active2" })</li>
+                            <li class="active3">@Html.ActionLink("3", "Implementation", "Home", new { @class = "active" })</li>
+                            <li class="active4">@Html.ActionLink("4", "FollowUp", "Home", new { @class = "active" })</li>
+                        </ul>
+                    </div>
+                </div>
+                @*<div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <ul class="progress">
+                            <a href='@Url.Action("Inception", "Home")'><li class="active1"></li></a>
+                            <a href='@Url.Action("Inception", "Home")'><li class="active2"></li></a>
+                            <a href='@Url.Action("Inception", "Home")'><li class="active"></li></a>
+                            <a href='@Url.Action("Inception", "Home")'><li class="active"></li></a>
+                            </ul>
+                            @*<a href="~/Views/Home/Inception.cshtml"><div class="progress active2"></div></a>*@
+                @*<ul id="progress">*@
+                @*<li class="active1">@Html.ActionLink("1", "Inception", "Home", new { @class = "active1" })</li>
+                    <li class="active2">@Html.ActionLink("2", "Prioritisation", "Home", new { @class = "active2" })</li>
+                    <li class="active3">@Html.ActionLink("3", "Implementation", "Home", new { @class = "active" })</li>
+                    <li class="active4">@Html.ActionLink("4", "FollowUp", "Home", new { @class = "active" })</li>*@
+                @*</ul>*@
+
+                @*</div>
+                    </div>*@
+
+
+
+                @*<div class="row">
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-info btn-arrow-right">Inception</button>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5">
+                            <button type="button" class="btn btn-info btn-arrow-right">Prioritisation</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-info btn-arrow-right">Implementation</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-info btn-arrow-right">Follow-up</button>
+                        </div>
+
+
+                    </div>*@
+
+            </div>
+
+
+
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class=" col-sm-1">
+                        <a href="Edit"><span1 class="glyphicon glyphicon-pencil iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="~/Views/Home/"><span1 class="glyphicon glyphicon-copy iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="~/Views/Home/"><span1 class="glyphicon glyphicon-play iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="~/Views/Home/"><span1 class="glyphicon glyphicon-trash iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-50">
+                    </div>
+
+                    <div class=" col-sm-50">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <hr style="border:2px;background:black;height:2px;">
+        <div class="row">
+            <div class="col-sm-1">
+                <input type="checkbox" class="form-check-input" />
+
+            </div>
+            <div class="col-sm-4 ">
+
+
+                <a href="#" s="stretched-link"><u><p style="font-size:17px;color:blue">Challenge 2</p></u></a>
+
+                <p><i><b>Created by Company_Name; End at dd/mm/yyyy</b></i> </p>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                        <p><span class="glyphicon glyphicon-tag iconsize1 "></span></p>
+                    </div>
+                    <div class="col-sm-4 ">
+
+                        <button2 class="btn btn-sm btn-block fontclass">keyword 1</button2>
+
+
+                    </div>
+                    <div class="col-sm-4 ">
+
+                        <button2 class="btn btn-sm btn-block fontclass">keyword 2</button2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-sm-1">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <a href="~/Views/Home/Edit.cshtml">
+                            <div class="circle c2">
+                                <div class="circle c3">
+                                    <div class="circle c4"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <ul id="progress">
+                            <li class="active1">@Html.ActionLink("1", "Inception", "Home", new { @class = "active1" })</li>
+                            <li class="active2">@Html.ActionLink("2", "Prioritisation", "Home", new { @class = "active2" })</li>
+                            <li class="active3">@Html.ActionLink("3", "Implementation", "Home", new { @class = "active" })</li>
+                            <li class="active4">@Html.ActionLink("4", "FollowUp", "Home", new { @class = "active" })</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class=" col-sm-1">
+                        @*TODO nic nie dziala, zadna ze sciezek cos sie popsulo w url  *@
+                        <a href="Edit"><span1 class="glyphicon glyphicon-pencil iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="~/Views/Home/"><span1 class="glyphicon glyphicon-copy iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="~/Views/Home/"><span1 class="glyphicon glyphicon-play iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="~/Views/Home/"><span1 class="glyphicon glyphicon-trash iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-50">
+                    </div>
+
+                    <div class=" col-sm-50">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <hr style="border:2px;background:black;height:2px;">
+        <div class="row">
+            <div class="col-sm-1">
+                <input type="checkbox" class="form-check-input" />
+
+            </div>
+            <div class="col-sm-4 ">
+
+
+                <a href="#" s="stretched-link"><u><p style="font-size:17px;color:blue">Challenge 3</p></u></a>
+
+                <p><i><b>Created by Company_Name; End at dd/mm/yyyy</b></i> </p>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                        <p><span class="glyphicon glyphicon-tag iconsize1 "></span></p>
+                    </div>
+                    <div class="col-sm-4 ">
+
+                        <button2 class="btn btn-sm btn-block fontclass">keyword 1</button2>
+
+                    </div>
+                    <div class="col-sm-4 ">
+
+                        <button2 class="btn btn-sm btn-block fontclass">keyword 2</button2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-sm-1 ">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <a href="~/Views/Home/Edit.cshtml">
+                            <div class="circle c2">
+                                <div class="circle c3">
+                                    <div class="circle c4"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <ul id="progress">
+                            <li class="active1 button3">@Html.ActionLink("1", "Inception", "Index", new { @class = "active1" })</li>
+                            <li class="active2">@Html.ActionLink("2", "Prioritisation", "Home", new { @class = "active2" })</li>
+                            <li class="active3">@Html.ActionLink("3", "Implementation", "Home", new { @class = "active" })</li>
+                            <li class="active4">@Html.ActionLink("4", "FollowUp", "Home", new { @class = "active" })</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class=" col-sm-1">
+                        <a href="Contact"><span1 class="glyphicon glyphicon-pencil iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="Inception"><span1 class="glyphicon glyphicon-copy iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="Contact"><span1 class="glyphicon glyphicon-play iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-1">
+                        <a href="#"><span1 class="glyphicon glyphicon-trash iconsize2"></span1></a>
+                    </div>
+
+                    <div class=" col-sm-50">
+                    </div>
+
+                    <div class=" col-sm-50">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <hr style="border:2px;background:black;height:2px;">
+        <div class="row">
+
+
+            <div class="col-sm-2 ">
+
+                <a style="text-decoration:none" href="Edit"><button1 class=" btn span1 btn-block fontclass " formaction="Edit"><strong>Delete Challenge</strong></button1></a>
+
+            </div>
+
+
+            <div class="col-sm-4 ">
+
+            </div>
+
+            <div class="col-sm-4 ">
+
+
+            </div>
+
+            <div class="col-sm-1 ">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-19">
+
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+
+                            <div class="btn-group margins">
+
+                                <button1 type="button" class="btn span1 btn-sm"><strong>1</strong></button1>
+                                <button1 type="button" class="btn span1 btn-sm"><strong>2</strong></button1>
+                                <button1 type="button" class="btn span1 btn-sm"><strong>3</strong></button1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+

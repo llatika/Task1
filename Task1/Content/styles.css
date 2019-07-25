@@ -1,0 +1,379 @@
+﻿
+/*CLASSES-STYLES*/
+.iconsize1 {
+    font-size: 15px;
+}
+
+.iconsize2 {
+    font-size: 17px;
+}
+.iconsize3 {
+    font-size: 15px;
+}
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    align-content: flex-end;
+}
+
+
+.hr {
+    display: block;
+    /*margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;*/
+    border-style: inset;
+    border-width: 1px;
+}
+
+.fontclass {
+    font-family: "Arial Bold", Gadget, sans-serif;
+    font-style: normal;
+    font-size: 12px
+}
+/*Button for keywords*/
+/*.button {
+                    width: 25px;
+                    height: 25px;
+                    background-color: #000;
+                    color: antiquewhite;
+                }*/
+/*Button for 'Delete challenge' and '123-pages' */
+.button {
+    width: 25px;
+    height: 25px;
+    background-color: #0f0;
+    border-radius: 0px;
+}
+.button1 {
+    width: 25px;
+    height: 25px;
+    background-color: #0f0;
+    border-radius: 0px;
+}
+/*Button for keywords*/
+.button2 {
+    width: 20px;
+    height: 10px;
+    /*background-color: #FFF;*/
+    border-radius: 0px;
+    border: 2px solid black;
+}
+
+.btn-sm {
+    font-size: 11px;
+    border-radius: 0px;
+    background-color: white;
+    border: 2px solid grey;
+}
+
+.span1 {
+    font-size: 12px;
+    border-radius: 0px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#glyphicon {
+    color: black;
+}
+
+#glyphicon-play:before {
+    margin-right: 10px;
+}
+/*Glyphicon tag*/
+
+
+
+/*for 123 -pages*/
+.margins {
+    float: right;
+}
+
+.label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+.label {
+    margin: .4rem 0;
+}
+
+
+
+
+
+
+
+/*SHAPES for scope*/
+
+.circle {
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.e{
+   margin-left:unset;
+   margin-right:unset;
+}
+.c2 {
+    width: 60px;
+    height: 60px;
+    border-color:  black;
+}
+
+.c3 {
+    width: 40px;
+    height: 40px;
+    border-color: black;
+}
+
+.c4 {
+    background-color: #99FF99;
+        width: 20px;
+    height: 20px;
+}
+
+
+
+/*PROGRESS BAR for "Status" field*/
+#progress {
+    padding: 0;
+    list-style-type: none;
+    font-family: arial;
+    font-size: 12px;
+    clear: both;
+    line-height: 1em;
+    margin: 0 -1px;
+    text-align: center;
+    
+}
+
+#progress li {
+    padding: 9px 27px 9px 27px;
+    background: #134;
+    color: #fff;
+    position: relative;
+    margin: 0 1px;
+    float: left;
+    width: 1px;
+}
+
+        #progress li:before {
+            content: '';
+            border-left: 16px solid #fff;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #progress li:after {
+            content: '';
+            border-left: 15px solid #333;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            z-index: 20;
+        }
+
+        #progress li.active {
+            background: #D4D9DB;
+        }
+        #progress li.active1 {
+            background: #3668ad;
+        }
+        #progress li.active2 {
+            background: #37b237;
+        }
+        #progress li.active3 {
+            background: #b00b5b;
+        }
+        #progress li.active4 {
+            background: #e5ee12;
+        }
+
+        #progress li.active:after {
+            border-left-color: #D4D9DB;
+        }
+        #progress li.active1:after {
+            border-left-color: #3668ad;
+        }
+        #progress li.active2:after {
+            border-left-color: #37b237;
+        }
+        #progress li.active3:after {
+            border-left-color: #b00b5b;
+        }
+        #progress li.active4:after {
+            border-left-color: #e5ee12;
+        }
+.btn-arrow-right, .btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.btn-arrow-right {
+    padding-left: 36px;
+}
+
+.btn-arrow-left {
+    padding-right: 36px;
+}
+
+    .btn-arrow-right:before, .btn-arrow-right:after, .btn-arrow-left:before,
+    .btn-arrow-left:after {
+        /* make two squares (before and after), looking similar to the button */
+        content: "";
+        position: absolute;
+        top: 5px; /* move it down because of rounded corners */
+        width: 22px; /* same as height */
+        height: 22px; /* button_outer_height / sqrt(2) */
+        background: inherit; /* use parent background */
+        border: inherit; /* use parent border */
+        border-left-color: transparent; /* hide left border */
+        border-bottom-color: transparent; /* hide bottom border */
+        border-radius: 0px 4px 0px 0px;
+        /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+        -webkit-border-radius: 0px 4px 0px 0px;
+        -moz-border-radius: 0px 4px 0px 0px;
+    }
+
+.btn-arrow-right:before, .btn-arrow-right:after {
+    transform: rotate(45deg);
+    /* rotate right arrow squares 45 deg to point right */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.btn-arrow-left:before, .btn-arrow-left:after {
+    transform: rotate(225deg);
+    /* rotate left arrow squares 225 deg to point left */
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+
+.btn-arrow-right:before, .btn-arrow-left:before {
+    /* align the "before" square to the left */
+    left: -11px;
+}
+
+.btn-arrow-right:after, .btn-arrow-left:after {
+    /* align the "after" square to the right */
+    right: -11px;
+}
+
+.btn-arrow-right:after, .btn-arrow-left:before {
+    /* bring arrow pointers to front */
+    z-index: 1;
+}
+
+.btn-arrow-right:before, .btn-arrow-left:after {
+    /* hide arrow tails background */
+    background-color: white;
+}
+
+
+
+
+input {
+    width: 252px;
+    height: 28px;
+    padding: 0 4px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+    input:focus {
+        outline: none;
+    }
+
+        input:focus + .hints-menu {
+            display: block;
+        }
+
+.hints-menu {
+    background: #fff;
+    position: relative;
+    display: none;
+    width: 240px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+    .hints-menu:before,
+    .hints-menu:after {
+        bottom: 100%;
+        left: 83%;
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .hints-menu:before {
+        border-color: transparent;
+        border-bottom-color: #ddd;
+        border-width: 9px;
+        margin-left: -9px;
+    }
+
+    .hints-menu:after {
+        border-color: transparent;
+        border-bottom-color: #fff;
+        border-width: 8px;
+        margin-left: -8px;
+    }
+
+.hints-title,
+.hint {
+    display: block;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    color: #555;
+}
+
+.hints-title {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hint {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .hint:hover {
+        color: #6fa024;
+    }

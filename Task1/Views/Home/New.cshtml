@@ -1,0 +1,166 @@
+﻿
+
+@{
+    /**/
+
+    ViewBag.Title = "NewChallenge";
+    List<SelectListItem> InnovationObjective = new List<SelectListItem>();
+    InnovationObjective.Add(new SelectListItem() { Text = "Project1", Value = "1" });
+    InnovationObjective.Add(new SelectListItem() { Text = "Project2", Value = "2" });
+
+
+}
+<head>
+
+
+    <link href="@Url.Content("~/Content/styles.css")"
+          rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <br />
+            <h2><b>Create a new Campaign</b></h2>
+        </div>
+        <div class="row">
+            <hr style="border:2px;background-color:darkgreen;height:2px;">
+        </div>
+        <div class="row">
+            <h5 style="color:darkgreen">Innovation Objective</h5>
+        </div>
+        <div class="row">
+
+            @Html.DropDownList("Projects", InnovationObjective, "--Select any Innovations--", new { @class = "helper-format", style = "font-size: 14px; width:1200px ; height:25px" })
+        </div>
+        <div class="row">
+            <h5>Name</h5>
+        </div>
+
+        <div class="row">
+            <input type="text" id="name" name="name" placeholder="Enter a name of your project..." required minlength="1" style=" font-size: 14px; width:1200px;height:25px">
+
+        </div>
+
+        <div class="row">
+            <h5>Description</h5>
+        </div>
+        <div class="row">
+            <textarea rows="2" cols="70" name="comment" style="font-size:14px;">
+</textarea>
+        </div>
+        <div class="row">
+            <h5>Ends at</h5>
+            <input type="date" id="myDate" name="name" placeholder="Enter a name of your project..." required minlength="1" style=" font-size: 14px; width:1200px;height:25px">
+        </div>
+
+
+        <div class="row">
+
+
+
+
+
+            <div class="col-sm-1">
+                <input type="checkbox" class="form-check-input" />
+            </div>
+
+            <div class="col-sm-4">
+                <b>Name</b>
+            </div>
+
+            <div class="col-sm-1 ">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <b>Scope</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 ">
+                <div class=" row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10">
+                        <b>Current Status</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 ">
+                <b>Actions</b>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+           
+
+           </div>
+
+        <div class="row">
+            <div class="col-sm-1"><span1 class="glyphicon glyphicon-tag iconsize3"></span1></div>
+            <div class="col-sm-18"><p>Enter a tag,press Enter or Tab or Comma to separate</p></div>
+            <br />
+        </div>
+        <div class="row">
+            <input type="text">
+
+            <div class="hints-menu">
+                <span class="hints-title">Please enter 1 more character</span>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        @*<div class="row">
+                    <input myFunction() type="date" id="dataend" name="name" placeholder="When should your compaign end? -(mm/dd/yyyy)" min="2018-01-01" max="2018-12-31" style=" font-size: 14px; width:1200px;height:25px">
+                    <script>
+        function myFunction() {
+          var x = document.createElement("INPUT");
+          x.setAttribute("type", "date");
+          x.setAttribute("value", "2014-02-09");
+          document.body.appendChild(x);
+        }
+                    </script>
+                </div>*@
+
+
+   
+</body>
+
+@*<head>
+
+
+    <link href="@Url.Content("~/Content/styles.css")"
+          rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+
+
+
+
+</body>*@
+
+
